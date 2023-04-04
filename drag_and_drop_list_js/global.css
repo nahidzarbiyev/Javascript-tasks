@@ -1,0 +1,53 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(147, 114, 255);
+}
+
+img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+ul{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px 25px;
+    width: 445px;
+    border-radius: 6px;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #dedede;
+    color: #556060;
+}
+ .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ i{
+    color: #dedede;
+
+ }
+
+ .item.dragging :where(.details, i){
+    opacity: 0;
+ }
