@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(93, 119, 113);
+}
+
+.download-btn{
+    display: flex;
+    align-items: center;
+    background: #00598d;
+    outline: none;
+    cursor: pointer;
+    border: transparent;
+    padding: 16px 30px;
+    border-radius: 7px;
+    column-gap: 6px;
+    font-size: 1.1rem;
+    color:#fff;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0,0.5);
+    transition: 0.5s all;
+}
+.download-btn.timer{
+    color: #fff;
+    background: none;
+    box-shadow: none;
+    font-size: 1.3rem;
+    cursor:auto;
+}
+.download-btn:hover{
+filter: brightness(150%);
+}
+.download-btn.timer b{
+    color: #00598d;
+    padding: 0 8px;
+}
