@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,87,127,1) 35%, rgba(0,212,255,1) 100%);
+
+}
+.product-card{
+    position: relative;
+    z-index: 3;
+    max-width: 355px;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+    background: #fff;
+
+}
+
+.product-card .logo-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 30px 30px;
+
+
+}
+
+
+.product-card .logo-cart img{
+    /* height: 40px; */
+    width: 40px;
+    object-fit: cover;
+}
+
+.product-card .logo-cart i{
+    font-size: 27px;
+    color: #707070;
+    margin-top: 10px;
+    transition: 0.3s all ease;
+
+}
+
+.product-card .logo-cart i:hover{
+    color: #333;
+}
+
+.product-card .main-images{
+    position: relative;
+    height: 220px;
+}
+.product-card .main-images img{
+    position: absolute;
+    z-index: -1;
+height: 300px;
+width: 300px;
+object-fit: cover;
+transform: rotate(18deg);
+filter: brightness(110%);
+left: 12px;
+top: -40px;
+opacity: 0;
+transition: opacity 0.5s  ease;
+}
+
+.product-card .main-images img.active{
+    opacity: 1;
+}
+.product-card .shoe-details .shoe_name{
+    font-size: 24px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.product-card .shoe-details p{
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+}
+
+.product-card .shoe-details .stars i{
+    margin: 0 -1px;
+    color: #333;
+}
+
+.product-card .color-price .color-option{
+    display: flex;
+    align-items: center;
+}
+
+.product-card .color-option .color{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 8px;
+}
+.color-option .circles{
+    display: flex;
+
+}
+
+.color-option .circles .circle{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #0071c7;
+    margin: 0 5px;
+}
+
+.color-option .circles .circle.blue.active{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0071c7
+
+}
+.color-option .circles .circle.yellow{
+    background: #e0dd1e;
+}
+.color-option .circles .circle.yellow.active{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #e0dd1e
+
+}
+.color-option .circles .circle.gray{
+    background: rgb(87, 87, 87);
+}
+.color-option .circles .circle.gray.active{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(87, 87, 87)
+
+}
+.color-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-price .price{
+    display: flex;
+    flex-direction: column;
+}
+
+.color-price .price .price_num{
+    font-size: 25px;
+    font-weight: 600;
+    color: #707070;
+
+}
+
+.color-price .price .price_letter{
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: -4px;
+    color: #707070;
+}
