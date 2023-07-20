@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+}
+
+.container{
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+    height: 900px;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.balance h3{
+    text-align: start;
+
+}
+.balance > span{
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    padding-top: 10px;
+
+
+}
+.income-expense-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: #dedede;
+    gap: 20px;
+
+    
+}
+
+.income-expense-container>span{
+  display: block;
+  border: 1px solid #333;
+  height: 100%;
+  opacity: 0.4;
+
+}
+
+.amount {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   color: #fff;
+   padding: 10px;
+   background: #eeeeee;
+}
+.amount p{
+    font-size: 0.8rem;
+
+}
+.amount span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.incame{
+    color: #059200;
+}
+.expense{
+    color: #920000;
+}
+
+.history> span{
+   width: 100%;
+   display: block;
+   margin: 10px 0;
+    border-top: 1px solid #dedede;
+}
+
+.history .delete-btn{
+    position: absolute;
+    color: #920000;
+    font-weight: bolder;
+    visibility: hidden;
+    width: 50px;
+    cursor: pointer;
+    scale: 0;
+    font-size: 1.5rem;
+    top: 50%;
+    left: -5%;
+    transform: translateY(-50%);    
+    transition: 0.3s ease;
+}
+
+.list:hover .delete-btn{
+    visibility: visible;
+    scale: 1;
+
+}
+.history-list{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.history-list .list{
+    position: relative;
+
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #ddd;
+}
+
+.list.pilus::after,.list.minus::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 7px;
+    height: 100%;
+    top: 0;
+    right: 0%;
+    background:  #059200;
+}
+.list.minus::after{
+    background:  #920000;
+
+}
+
+.add-new-transaction .form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 7px;
+    border-radius: 8px;
+}
+input:focus{
+    border: 1px solid #24a6f1;
+
+}
+form label{
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+.btn{
+    outline: none;
+    border: none;
+    background: rgb(0, 107, 156);
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 7px;
+}
