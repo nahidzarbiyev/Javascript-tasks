@@ -30,3 +30,4 @@ const copyColor = (el, hexVal)=>{
     })
 }
 refreshBtn.addEventListener("click", generatePalette);
+

@@ -18,3 +18,5 @@ const clock = setInterval(() => {
     second.innerText = sec;
 
 }, 1000);
+
+
